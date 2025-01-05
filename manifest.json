@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Email Current Tab",
+  "version": "1.1",
+  "description": "Email the current tab's URL and content via Gmail",
+  "author": "Yuval Pecht",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "email-tab@yourdomain.com",
+      "strict_min_version": "58.0"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icon48.png",
+      "96": "icon96.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Email Current Tab"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  }
+}
